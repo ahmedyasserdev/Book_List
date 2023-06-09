@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+
+    <section>
+
+        <h1> Book List App </h1>
+
+    <div class="container">
+        <div class="inputs">   
+                <input type="text" placeholder="Title" id="title">
+                <input type="text" placeholder="Author" id="author">
+                <input type="text" placeholder="Beginning Date" id="bd">
+                <input type="text" placeholder="Ending Date" id="ed">
+                <input type="text" placeholder="Category" id="category">
+                <button id="create">Add Book</button>
+
+                <div class="searchContainer">
+                    <input onkeyup="search (this.value)" type="text"  id="searchInput" placeholder="Search">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+                </div>
+        </div>
+        <table>
+
+            <tr>
+                <th>
+                    <tr>
+                        <th>Id</th>
+                        <th>title</th>
+                        <th>Author</th>
+                        <th>Beginning Date</th>
+                        <th>Ending Date</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </th>
+            </tr>
+
+            <tbody id="tbody">
+                
+            </tbody>
+
+        </table>
+    </div>
+    
+</section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
